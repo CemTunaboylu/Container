@@ -32,7 +32,7 @@ CGroups might not be working with rootless containers. As namespaces can be suma
 
 `mount | grep cgroups`
 
-![An example of cgroups in Ubuntu with](images/cgroups_ss.png)
+![An example of cgroups in Ubuntu with](images/cgroup_ss.png)
 
 `:() { : | : & }; :` initiates a fork bomb. In a constraint container, it will not be able to find unlimited resources. When you check the processes you will see \<defunct\> ones which are the fork bombs, 
 To stop the bomb, exit the container. 
