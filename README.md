@@ -1,4 +1,12 @@
 # Container
+## A subtle deblurring of the concepts
+
+### What is an Image?
+### What is a container?
+### What are namespaces?
+### What are cgroups?
+
+
 ## Containers from scratch in Go. 
 
 To be precise; 
@@ -46,8 +54,6 @@ It is a Denial-of-Service attack. You basically clone a function again and again
 `&`run in the background
 `};` function body and definition end
 `:` call the colon, initiate the fork bomb.
-
-
 
 
  In a constraint container, it will not be able to find unlimited resources. When you check the processes you will see \<defunct\> ones which are the fork bombs, 
