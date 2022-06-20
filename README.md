@@ -1,14 +1,14 @@
 # Deep Diving 
 
-Before starting, I want to clear some of my notations. I will abide to the conventions of Linux man pages. In those:
+Before starting, I want to clarify some of my notations. I will abide by the conventions of Linux man pages. In those:
 
-`[ ]` means that anything within (any values, information or parameters) are optional. You can chose one, more than one or none at all.
-`< >` means that the element within (again any parameter, information or a value) is mandatory. We require to replace the text in between angle brackets with actual appropriate information.
+`[ ]` means that anything within (any values, information, or parameters) is optional. You can choose one, more than one or none at all.
+`< >` means that the element within (again any parameter, information or a value) is mandatory. We require replacing the text in between angle brackets with actual appropriate information.
 `-`means the options. It does not stand by itself, it will be followed by some form of a value ( or information or parameter).
 
-`-` We will not use that one I guess but while on it a little extra does not kill anyone ... It means long options like a more descriptive name of the option name above. It is pretty common and you may stumble upon them anywhere. For example an option `-l` indicating an option as a 'list', will be given `--list` as a long option as well. Both accomplish the same thing. When you use heavily on options, it helps to use long options for visibility and readability for you and others.
+`-` We will not use that one I guess. Anyway while we are on it, a little extra does not kill anyone ... They are explicitly written as their names. It is pretty common and you may stumble upon them anywhere. For example, an option `-l` indicating an option as a 'list', will be given `--list` as a long option as well. Both accomplish the same thing. When you use heavily on options, it helps to use long options for visibility and readability for you and others.
 
-`{ }` I am not sure if this is common. This means within are required options that can be in any relation such as mutual exclusion and so on. One of the specified options or some in conjunction to others *must* be present. For example filtring some results with `{ --time $TODAY | --priority 9 }` means "I want the ones which are from today( assume that entries have times associated with them)" **OR** those who are of priority 9". Note that one of these conditions must be fulfilled. If none of them are satisfied, returned result is empty.
+`{ }` I am not sure if this is common. This means within are required options that can be in any relation such as mutual exclusion and so on. One of the specified options or some in conjunction with others *must* be present. For example, filtring some results with `{ --time $TODAY | --priority 9 }` means "I want the ones which are from today (assume that entries have times associated with them) **OR** those who are of priority 9". Note that one of these conditions must be fulfilled. If none of them is satisfied, the returned result is empty.
 
 
 # Container
@@ -34,7 +34,7 @@ Metadata of `images/`             |  metadata of `README.md`
 ![metadata of folder](/images/metadata_of_images.png)  | ![metadata of README.md file](/images/metadata_of_md.png)
 
 
-You can see that they are not awfully different. It is trivial to see know that a directory is a file itself that can comtain multiple other files.
+You can see that they are not awfully different. It is trivial to see that a directory is a file itself that can contain multiple other files.
 
 
 
@@ -56,7 +56,7 @@ We will not cover all of this obviously ... Let us limit the `tree` command by t
 
 You might be wondering why there is an arrow `->` after **`/bin`**. `tree` shows symbolic links in that format : `name -> real-path`. A symbolic link - you may have encountered it referred as a symlink, shell link or a soft link - points to another file or directory on the system or a connected file system. A fancy way of saying a `shortcut`. So my **`/bin`** directory actually points to **`usr/bin`** and the binaries that 'I' - as a user - use and run are in that folder.
 
-You see yourself where that programs or commands reside with `which`. For example, the command to move stuff around `mv`:
+You see where those programs or commands reside with `which`. For example, the command to move stuff around `mv`:
 
 ![moves place](/images/moves_place.png)
 
@@ -66,9 +66,9 @@ I would like to `ls` into **`/bin`** but it is huge, so you would have to do it 
 
 ![lsa_boot](/images/lsa_boot.png)
 
-**`/boot`** includes what your system needs when starting a.k.a. booting. There are information for GRUB (GRand Unified Bootloader) - the boot loader package - and all the kernels - we will dive deeper into kernels, but for now, it is basically the core program of OS that has complete control over everything in the system - you have installed, their configuration files and so on. 
+**`/boot`** includes what your system needs when starting (a.k.a. booting). There are information for GRUB (GRand Unified Bootloader) - the boot loader package - and all the kernels - we will dive deeper into kernels, but for now, it is basically the core program of OS that has complete control over everything in the system (you have installed, their configuration files and so on) -. 
 
-It is a very important directory, it is not a good idea to touch any of these...
+**`/boot`** is a very important directory, I dont' recommend touching any of these files...
 
 ---
 
