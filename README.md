@@ -27,11 +27,9 @@ Containers are structured files a.k.a. file system layers and configuration file
 
 Information is contained within a file. A directory itself is a file too. The only difference is that it can contain other files/directories. Directories have children in a tabular form while their content is null. Thus their size is 0.
 
-if we `mdls images/` in this repository, we will see the following. `mdls` stands for Metadata List, and as its name suggests it is for listing the metadata of the specified **file**.
+if we `mdls images/` in this repository, we will see the following. `mdls` stands for Metadata List, and as its name suggests it is for listing the metadata of the specified **file**. I drew an arrow to indicate that their starting points are actually corresponding. They are not aligned so to reflect otherwise. Let us avoid confusion if there is any. Note that they are different in the <span style="color:orange">orange box</span>, as we mentioned a directory do not have a size. The markdown only has additional fields as in the <span style="color:blue">blue box</span>.
 
-Metadata of `images/`             |  metadata of `README.md`
-:-------------------------:|:-------------------------:
-![metadata of folder](/images/metadata_of_images.png)  | ![metadata of README.md file](/images/metadata_of_md.png)
+![metadata comparison](/images/metadata_file_and_dir.png)
 
 
 You can see that they are not awfully different. It is trivial to see that a directory is a file itself that can contain multiple other files.
@@ -45,7 +43,7 @@ If I recklessly type `tree /` (
 `/` *refers to the root directory. The root directory is - as its name suggests - the directory from which all the other directories branch off.* 
 ), my life will flash before my eyes. 
 
-![Without limited tree cmd](/images/tree_without_limits.mov)
+
 
 We will not cover all of this obviously ... Let us limit the `tree` command by telling it to show only the 1st children of the root directory by `tree -L 1 /`.
 
