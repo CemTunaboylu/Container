@@ -195,7 +195,7 @@ You may feel exhausted now. Why do I keep straying from the main thing, the Linu
 
 ---
 
-**`/srv`** contains data for the systems provided services. This includes your servers. Let us say we are running an FTP server
+**`/srv`** contains the data for the system's provided services. This includes your servers. Let us say we are running an FTP server
 on our Linux machine. All the files that I am serving would go in **`/srv/ftp`**. Any service will have its data in **`/srv/<service>`**. Another example can be a web service. It would have its sites HTML files in **`/srv/http`** or **`/srv/www`**
 
 ---
