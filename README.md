@@ -110,7 +110,7 @@ Here is my library 🤓📚
 
 ---
 
-**`/mnt`** is a geezer one too. It was used to manually mount storage, and temporarily mount a filesystem as needed. This directory does not affect any execution or run of any program. If I am to increase my memory and add an SSD to my system, I can set up a permanent mount point for it here.
+**`/mnt`** is a geezer one too. It was used to manually mount storage, and temporarily mount a filesystem as needed. This directory does not affect any execution or run of any program. If I am to farm in Supspace network for example, to increase my memory and to gain more tickets, I add an SSD to my system, I can set up a permanent mount point for it here.
 
 ---
 
