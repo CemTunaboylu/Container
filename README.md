@@ -34,16 +34,13 @@ if we `mdls images/` in this repository, we will see the following. `mdls` stand
 
 You can see that they are not awfully different. It is trivial to see that a directory is a file itself that can contain multiple other files.
 
-
-
-
 We can say that containers are a collection of Linux technologies that run one or more Linux processes. That is why we will discover 'structured files/file systems' in Linux itself. 
 
 If I recklessly type `tree /` (
 `/` *refers to the root directory. The root directory is - as its name suggests - the directory from which all the other directories branch off.* 
 ), my life will flash before my eyes. 
 
-
+https://user-images.githubusercontent.com/40325021/174617365-eb663412-afc4-4f77-80e2-62787f7bfff6.mov
 
 We will not cover all of this obviously ... Let us limit the `tree` command by telling it to show only the 1st children of the root directory by `tree -L 1 /`.
 
