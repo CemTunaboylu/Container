@@ -3,10 +3,12 @@
 Before starting, I want to clarify some of my notations. I will abide by the conventions of Linux man pages. In those:
 
 `[ ]` means that anything within (any values, information, or parameters) is optional. You can choose one, more than one or none at all.
+
 `< >` means that the element within (again any parameter, information, or a value) is mandatory. We require replacing the text in between angle brackets with actual appropriate information.
+
 `-` means the options. It does not stand by itself, it will be followed by some form of a value ( or information or parameter).
 
-`-` We will not use that one I guess. Anyway while we are on it, a little extra does not kill anyone ... They are explicitly written as their names. It is pretty common and you may stumble upon them anywhere. For example, an option `-l` indicating an option as a 'list', will be given `--list` as a long option as well. Both accomplish the same thing. When you use heavily on options, it helps to use long options for visibility and readability for you and others.
+`--` We will not use that one I guess. Anyway while we are on it, a little extra does not kill anyone ... They are explicitly written as their names. It is pretty common and you may stumble upon them anywhere. For example, an option `-l` indicating an option as a 'list', will be given `--list` as a long option as well. Both accomplish the same thing. When you use heavily on options, it helps to use long options for visibility and readability for you and others.
 
 `{ }` I am not sure if this is common. This means within are required options that can be in any relation such as mutual exclusion and so on. One of the specified options or some in conjunction with others *must* be present. For example, filtring some results with `{ --time $TODAY | --priority 9 }` means "I want the ones which are from today (assume that entries have times associated with them) **OR** those who are of priority 9". Note that one of these conditions must be fulfilled. If none of them is satisfied, the returned result is empty.
 
